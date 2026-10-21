@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    color: rgb(34, 34, 34);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+#divtop {
+    background-color: rgb(30, 41, 59);
+    padding: 6% 6% 5%;
+}
+
+#CC {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0 0 8px;
+    padding-left: 1%;
+    font-size: 45px;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: rgb(203, 213, 225);
+    margin: 0;
+}
+
+.authors {
+    margin-top: 24px;
+    font-size: 15px;
+    color: rgb(148, 163, 184);
+}
+
+p {
+    padding-left: 1%;
+}
+
+/* ---------- Content ---------- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 6% 60px;
+}
+
+section {
+    margin-top: 48px;
+}
+
+h2 {
+    color: rgb(30, 41, 59);
+    font-size: 28px;
+    margin: 0 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(209, 213, 219);
+}
+
+ul, ol {
+    padding-left: 1.4em;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+strong {
+    color: rgb(30, 41, 59);
+}
+
+.note {
+    color: rgb(107, 114, 128);
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+/* ---------- Table ---------- */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 213, 219);
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: center;
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+th {
+    color: rgb(30, 41, 59);
+    background-color: rgb(243, 244, 246);
+}
+
+tr.winner td {
+    background-color: rgb(241, 245, 249);
+    font-weight: bold;
+}
+
+/* ---------- Constraints chips ---------- */
+.chips {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chips li {
+    margin: 0;
+    padding: 8px 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 4px;
+}
+
+
+@media (max-width: 600px) {
+    #CC { font-size: 34px; }
+    h2 { font-size: 22px; }
+}
+
+/* ---------- Product site additions ---------- */
+.tagline {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+.subtitle {
+    max-width: 560px;
+}
+
+.steps li {
+    padding-left: 4px;
+}
+
+.price-section {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 4px;
+    padding: 32px 20px;
+}
+
+.price-section h2 {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.price-section p {
+    padding-left: 0;
+}
+
+.price {
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(30, 41, 59);
+    margin: 8px 0;
+}
+
+.price-line {
+    font-size: 20px;
+    margin: 0 0 4px;
+}
+
+.price-sub {
+    color: rgb(107, 114, 128);
+    margin: 0;
+}
+
+.closing {
+    text-align: center;
+}
+
+.closing p {
+    padding-left: 0;
+}
+
+/* ---------- Card layout ---------- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: rgb(30, 41, 59);
+}
+
+.card p {
+    margin: 0;
+    padding-left: 0;
+    color: rgb(75, 85, 99);
+}
+
+.step-num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(30, 41, 59);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lead {
+    padding-left: 0;
+    font-size: 18px;
+    max-width: 700px;
+}
